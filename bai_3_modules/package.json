@@ -1,0 +1,12 @@
+{
+  "name": "net_chat_server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node net_chat_server"
+  },
+  "dependencies": {
+    "underscore": "1.6.0",
+    "cli-color": "0.3.2"
+  }
+}
