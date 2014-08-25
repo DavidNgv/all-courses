@@ -13,7 +13,11 @@ chatServer.on('connection', function(client) {
 //    console.log(data.toString());
     for(var i=0; i<clientList.length; i+=1) {
       //write this data to all clients
-      clientList[i].write(data)
+      Utils.debug(data.toString());
+
+      if (client !==clientList[i]) clientList[i].write(data)
+
+      if (data.toString() == 'e') client.end();
     }
   });
 });
