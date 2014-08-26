@@ -3,6 +3,7 @@ var printf = require('util').format;
 var EventEmitter = require('events').EventEmitter;
 var _ = require('underscore');
 
+//http://blog.tompawlak.org/how-to-generate-random-values-nodejs-javascript
 function randomInt (low, high) {
   return Math.floor(Math.random() * (high - low) + low);
 }
