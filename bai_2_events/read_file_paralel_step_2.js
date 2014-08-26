@@ -24,23 +24,8 @@ myEmitter.on('data', function(result){
   console.error(err);
 });
 
-/*
-for (var i=1; i<=4; i++) {
-  var processOrder = randomInt(1, 5);
-  console.info('Reading data of: ', processOrder);
-  fs.readFile(printf('./net_chat_server_step_%s.js', processOrder), function(err, data){
-    if (err) {
-      myEmitter.emit('error', err);
-    } else {
-      myEmitter.emit('data', data.toString());
-    }
-  })
-};
-*/
-
 
 var alreadyProcessed = [];
-
 for (var i=1; i<=4; i++) {
   var processOrder = 0;
   do {
