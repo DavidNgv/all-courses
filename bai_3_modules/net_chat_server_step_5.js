@@ -1,5 +1,5 @@
 var net = require('net'),
-  Utils = require('./src/my_utils_step_1'),
+  Utils = require('./src/my_utils_step_2'),
   chatServer = net.createServer(),
   clientList = []
   ;
@@ -19,5 +19,5 @@ chatServer.on('connection', function(client) {
 });
 
 chatServer.listen(9000, function(){
-  Utils.log('net chat server listen on port 9000');
+  Utils.warn('net chat server listen on port 9000');
 });

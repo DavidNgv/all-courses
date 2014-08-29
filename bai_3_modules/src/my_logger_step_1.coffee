@@ -5,6 +5,8 @@ MyStringUtils = require './my_string_utils_step_1'
 
 class MyLogger
   @log: (msgs...) ->
+    __myConsole.log 'callee name: ', arguments.callee.toString()
+
     messages = ''
 
     for msg in msgs
