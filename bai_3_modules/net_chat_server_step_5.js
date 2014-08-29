@@ -19,5 +19,5 @@ chatServer.on('connection', function(client) {
 });
 
 chatServer.listen(9000, function(){
-  Utils.warn('net chat server listen on port 9000');
+  Utils.error('net chat server listen on port 9000');
 });

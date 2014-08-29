@@ -19,8 +19,8 @@ class MyStringUtils
   @colorString: (level, msg) ->
     switch level
       when 'log' then return cliColor.black.bgWhite.underline msg
-      when 'debug' then return cliColor.black.bgWhite.underline msg
-      when 'warn' then return cliColor.red.bgWhite.underline msg
-      when 'error' then return cliColor.red.bgWhite.underline msg
+      when 'debug' then return cliColor.black.bgGreen.underline msg
+      when 'warn' then return cliColor.red.bgYellow.underline msg
+      when 'error' then return cliColor.white.bgRed.underline msg
     return ''
 module.exports = MyStringUtils
